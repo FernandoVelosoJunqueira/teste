@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: rgb(55, 55, 70);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+}
+
+main.container { 
+    background:  rgb(35, 35, 53);
+    display: flex;
+    min-width: 280px;
+    min-height: 80vh;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+} 
+
+img.img_logo {
+    position: absolute;
+    padding: 0.5rem;
+    margin-top: 50px;
+    width: 250px;
+    height: 175px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    position: absolute;
+    top: 325px;
+    left: 50px;
+}
+
+.input-field .underline::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0px;
+    background: white;
+}
+
+.input-field .underline::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.88rem;
+    color: white;
+    width: 180px;
+    background-color: rgb(35, 35, 53);
+    border-radius: 3px
+}
+
+.input-field input::placeholder {
+    color: white;
+}
+
+button {
+    /* margin-top: 300px; */
+    margin-left: 50px;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border-color: rgba(168, 168, 179, 1);
+}
+
+button:hover {
+    letter-spacing: 0.5px; /*da o pulinho*/
+    background: linear-gradient(to right, #4776E6, #8e54e9);
+}
+
+#button {
+    position:absolute; 
+    top: 375px;
+    left: 0px;
+    width: 180px;
+}
+
+#button_1 {
+    position:absolute; 
+    top: 425px;
+    left: 0px;
+    width: 180px;
+}
+
+#button_2 {
+    position:absolute; 
+    top: 475px;
+    left: 0px;
+    width: 180px;
+}
+
+/* parte do texto */
+main.content {
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+main h1 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 1.5rem;
+    color: rgba(168, 168, 179, 1);
+}
+
+main h1::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 58px;
+    bottom: 3px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.input-text {
+    position: absolute;
+    max-width: 980px;
+    top: 75px;
+    left: 325px;
+    color: white;
+    font-size: 0.7rem;
+}
+
+h1.bd {
+    top: 80px;
+}
+
+h1.bd::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 240px;
+    bottom: 3px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.input-bd {
+    position: absolute;
+    max-width: 980px;
+    top: 220px;
+    left: 325px;
+    color: white;
+    font-size: 0.7rem;
+}
+
+h1.at {
+    top: 150px;
+}
+
+h1.at::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 200px;
+    bottom: 3px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.input-at {
+    position: absolute;
+    max-width: 980px;
+    top: 360px;
+    left: 325px;
+    color: white;
+    font-size: 0.7rem;
+}
